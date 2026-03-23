@@ -5,7 +5,7 @@ export const company = {
   whatsapp: '11943459000',
   phone: '(11) 94345-9000',
   email: 'contato@acengenhariaenergia.com.br',
-  address: 'Av. das Nações Sustentáveis, 2400 - Centro, São Paulo - SP',
+  address: 'Rua Pascoal Ranieri Mazzili, 421',
   city: 'São Paulo - SP',
 };
 
