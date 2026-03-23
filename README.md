@@ -1,44 +1,60 @@
-# 🌐 Site Nexus
+<p align="center">
+  <img src="https://img.youtube.com/vi/I_qT6F5saeg/maxresdefault.jpg" width="100%" />
+</p>
 
-Projeto de site profissional desenvolvido com foco em performance, design moderno e experiência do usuário.
+<h1 align="center">🌐 Site Nexus</h1>
+
+<p align="center">
+  Projeto de site profissional com foco em performance, design moderno e experiência do usuário.
+</p>
+
+---
 
 ## 🚀 Demonstração
 
-🎥 Vídeo do projeto:
+🎥 Assista ao vídeo do projeto:  
 https://youtu.be/I_qT6F5saeg
+
+---
 
 ## 📌 Sobre o projeto
 
-O Site Nexus foi desenvolvido com o objetivo de entregar uma solução web moderna, responsiva e eficiente para apresentação de serviços.
+O **Site Nexus** foi desenvolvido para entregar uma solução moderna, responsiva e eficiente para apresentação de serviços.
 
-O projeto prioriza:
-
+### 🎯 Objetivos:
 - Experiência do usuário (UX)
 - Interface moderna (UI)
-- Performance e carregamento rápido
-- Código limpo e organizado
+- Alta performance
+- Código limpo e escalável
+
+---
 
 ## 🛠️ Tecnologias utilizadas
 
-- HTML
-- CSS
-- JavaScript
-- (adicione aqui caso tenha usado React, Tailwind, etc)
+- HTML  
+- CSS  
+- JavaScript  
+
+*(adicione aqui React, Tailwind, etc se tiver usado)*
+
+---
 
 ## 📱 Responsividade
 
-O site foi desenvolvido para funcionar perfeitamente em:
+✔ Desktop  
+✔ Tablet  
+✔ Mobile  
 
-- Desktop
-- Tablet
-- Mobile
+---
 
 ## ⚙️ Funcionalidades
 
-- Navegação intuitiva
-- Layout responsivo
-- Seções organizadas para apresentação de serviços
-- Design moderno e profissional
+- Navegação intuitiva  
+- Layout responsivo  
+- Design moderno e profissional  
+- Estrutura otimizada  
+
+---
 
 ## 📂 Estrutura do projeto
 
