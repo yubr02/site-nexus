@@ -15,6 +15,22 @@ function Contact({ company }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    const message = encodeURIComponent(
+      [
+        'Olá, quero solicitar uma proposta de energia solar.',
+        '',
+        `Nome: ${formState.nome || '-'}`,
+        `Telefone: ${formState.telefone || '-'}`,
+        `Email: ${formState.email || '-'}`,
+        `Cidade: ${formState.cidade || '-'}`,
+        '',
+        'Mensagem:',
+        formState.mensagem || '-',
+      ].join('\n'),
+    );
+
+    window.open(`https://wa.me/${company.whatsapp}?text=${message}`, '_blank');
   };
 
   return (
@@ -94,7 +110,7 @@ function Contact({ company }) {
             />
           </label>
           <button className="button button--primary" type="submit">
-            Enviar mensagem
+            Enviar por WhatsApp
           </button>
         </form>
       </div>
