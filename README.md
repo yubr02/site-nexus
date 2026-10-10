@@ -1,65 +1,64 @@
-## 🚀 Demonstração
-<p align="center">
-  <img src="https://img.youtube.com/vi/I_qT6F5saeg/maxresdefault.jpg" width="100%" />
-</p>
+# Site AC Engenharia e Energia Solar
 
-<h1 align="center">🌐 Site Ac engenharia</h1>
+Site institucional responsivo para apresentação dos serviços da AC Engenharia, com foco em instalações elétricas e energia solar.
 
-<p align="center">
-  Projeto de site profissional com foco em performance, design moderno e experiência do usuário.
-</p>
+## Visão geral
 
----
+O projeto transforma a presença digital da empresa em uma experiência direta e acessível, apresentando serviços, diferenciais e canais de contato em diferentes tamanhos de tela.
 
+## Tecnologias
 
+- React
+- Vite
+- JavaScript
+- HTML
+- CSS
 
+## Funcionalidades
 
+- Layout responsivo para desktop, tablet e celular
+- Apresentação dos serviços da empresa
+- Navegação por seções
+- Identidade visual própria
+- Versão preparada para publicação estática
 
-## 📌 Sobre o projeto
+## Como executar
 
-O **Site Nexus** foi desenvolvido para entregar uma solução moderna, responsiva e eficiente para apresentação de serviços.
+### Pré-requisitos
 
-### 🎯 Objetivos:
-- Experiência do usuário (UX)
-- Interface moderna (UI)
-- Alta performance
-- Código limpo e escalável
+- Node.js
+- npm
 
----
-
-## 🛠️ Tecnologias utilizadas
-
-- HTML  
-- CSS  
-- JavaScript  
-
-*(adicione aqui React, Tailwind, etc se tiver usado)*
-
----
-
-## 📱 Responsividade
-
-✔ Desktop  
-✔ Tablet  
-✔ Mobile  
-
----
-
-## ⚙️ Funcionalidades
-
-- Navegação intuitiva  
-- Layout responsivo  
-- Design moderno e profissional  
-- Estrutura otimizada  
-
----
-
-## 📂 Estrutura do projeto
+### Instalação
 
 ```bash
+git clone https://github.com/yubr02/site-nexus.git
+cd site-nexus
+npm install
+npm run dev
+```
+
+O terminal exibirá o endereço local da aplicação.
+
+## Build de produção
+
+```bash
+npm run build
+```
+
+Os arquivos otimizados serão gerados na pasta `dist`.
+
+## Estrutura principal
+
+```text
 site-nexus/
+├── public/
+├── src/
 ├── index.html
-├── css/
-├── js/
-├── assets/
-└── README.md
+├── package.json
+└── vite.config.js
+```
+
+## Autor
+
+Desenvolvido por [Matheus Santos Carvalho](https://github.com/yubr02).
