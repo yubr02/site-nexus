@@ -1,3 +1,5 @@
+import { whatsappUrl } from '../utils/whatsapp.js';
+
 function Footer({ links, company }) {
   return (
     <footer className="footer">
@@ -16,15 +18,15 @@ function Footer({ links, company }) {
         </div>
 
         <div className="footer__social">
-          <a href={`https://wa.me/${company.whatsapp}`} target="_blank" rel="noreferrer">
-            WhatsApp
+          <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer">
+            WhatsApp · {company.phone}
           </a>
           <a href={`mailto:${company.email}`}>Email</a>
         </div>
       </div>
       <div className="footer__bar">
         <div className="container">
-          <span>(c) 2026 {company.name}. Todos os direitos reservados.</span>
+          <span>© {new Date().getFullYear()} {company.name}. Todos os direitos reservados.</span>
         </div>
       </div>
     </footer>

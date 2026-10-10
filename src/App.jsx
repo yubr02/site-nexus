@@ -18,8 +18,9 @@ function App() {
 
   return (
     <div className="app-shell">
+      <a className="skip-link" href="#main-content">Pular para o conteúdo</a>
       <Navbar links={navLinks} company={company} />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <Hero company={company} />
         <Services />
         <About />

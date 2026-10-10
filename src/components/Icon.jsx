@@ -1,4 +1,6 @@
 const icons = {
+  tool: <path d="m14 6 4 4 3-3a6 6 0 0 1-8 7l-6 6a2 2 0 0 1-3-3l6-6a6 6 0 0 1 7-8l-3 3Z" strokeLinecap="round" strokeLinejoin="round" />,
+  panel: <path d="M5 3h14v18H5zM8 7h8M8 11h2m4 0h2M8 15h2m4 0h2" strokeLinecap="round" strokeLinejoin="round" />,
   bolt: (
     <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" strokeLinecap="round" strokeLinejoin="round" />
   ),

@@ -1,30 +1,24 @@
-import { aboutCards } from '../data/siteContent.js';
+import { serviceSteps } from '../data/siteContent.js';
 
 function About() {
   return (
     <section className="section section--light" id="sobre">
       <div className="container">
-        <div className="section-heading reveal">
-          <span className="eyebrow">Sobre a empresa</span>
-          <h2>Uma empresa com postura técnica e atendimento consultivo.</h2>
-          <p>
-            A EMG reúne instalações elétricas, manutenção, quadros de distribuição e energia
-            solar em um só lugar. Nosso atendimento começa entendendo o que você precisa,
-            para orientar o serviço e apresentar uma proposta clara para sua casa ou empresa.
-          </p>
+        <div className="section-heading">
+          <span className="eyebrow">Sobre a EMG</span>
+          <h2>Antes de começar, vamos entender o que você precisa</h2>
+          <p>A EMG trabalha com instalações elétricas, manutenção, quadros de distribuição e energia solar. Conversamos sobre sua necessidade, avaliamos o serviço e apresentamos uma proposta para sua casa ou empresa.</p>
         </div>
-
-        <div className="about-grid">
-          {aboutCards.map((card) => (
-            <article className="info-card reveal" key={card.title}>
-              <h3>{card.title}</h3>
-              <p>{card.text}</p>
-            </article>
+        <ol className="process-grid" aria-label="Etapas do atendimento">
+          {serviceSteps.map((step, index) => (
+            <li key={step.title}>
+              <span className="process-number" aria-hidden="true">{index + 1}</span>
+              <h3>{step.title}</h3><p>{step.text}</p>
+            </li>
           ))}
-        </div>
+        </ol>
       </div>
     </section>
   );
 }
-
 export default About;

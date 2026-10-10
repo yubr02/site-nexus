@@ -7,10 +7,10 @@ function Benefits() {
       <div className="container">
         <div className="section-heading reveal">
           <span className="eyebrow">Benefícios da energia solar</span>
-          <h2>Uma decisão que combina economia, sustentabilidade e valorização.</h2>
+          <h2>Energia solar começa com uma avaliação do seu imóvel</h2>
           <p>
-            A energia solar vai muito além da redução da conta. Ela fortalece a previsibilidade
-            financeira, reduz exposição a reajustes e projeta uma imagem moderna para o imóvel ou negócio.
+            Seu consumo, o espaço para os painéis e as condições da instalação ajudam a definir
+            o projeto. Conheça os pontos a considerar antes de investir.
           </p>
         </div>
 
@@ -25,6 +25,7 @@ function Benefits() {
             </article>
           ))}
         </div>
+        <a className="text-link" href="#simulacao">Fazer uma simulação inicial <span aria-hidden="true">↓</span></a>
       </div>
     </section>
   );

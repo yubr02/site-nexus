@@ -1,6 +1,6 @@
-# Site AC Engenharia e Energia Solar
+# EMG Instalações Elétricas & Energia Solar
 
-Site institucional responsivo para apresentação dos serviços da AC Engenharia, com foco em instalações elétricas e energia solar.
+Site institucional em React e Vite para apresentação dos serviços da EMG e pedidos de orçamento pelo WhatsApp.
 
 ## Visão geral
 
@@ -47,6 +47,22 @@ npm run build
 ```
 
 Os arquivos otimizados serão gerados na pasta `dist`.
+
+## Verificações
+
+`npm test` verifica a leitura de valores monetários brasileiros, a simulação e a codificação das mensagens do WhatsApp. `npm run preview` serve o build para revisão local.
+
+O roteiro `scripts/check-browser.mjs` testa a interface no Chrome em 360, 768 e 1440 px, sem enviar mensagens. Requer Playwright instalado separadamente; informe seu diretório `node_modules` em `EMG_QA_MODULES`, o caminho do Chrome em `EMG_CHROME` e, opcionalmente, `EMG_QA_URL` (padrão: `http://127.0.0.1:4173`). Capturas e relatório ficam em `dist/qa/`, ignorado pelo Git. Essas ferramentas não fazem parte do bundle do site.
+
+## Conteúdo e publicação
+
+- Dados de contato, serviços e perguntas frequentes: `src/data/siteContent.js`.
+- O e-mail cadastrado ainda usa a marca AC. Confirmar o novo endereço antes de substituir.
+- O endereço cadastrado fica em São Paulo; a região de atendimento precisa ser confirmada, sem inferir cobertura a partir do endereço.
+- Não há fotos identificadas de obras da EMG ou informações suficientes para um portfólio. A imagem institucional foi preservada e otimizada em WebP; o PNG original continua disponível.
+- A explicação sobre falta de energia foi conferida em [Solar and Resilience Basics, Department of Energy](https://www.energy.gov/cmei/systems/solar-and-resilience-basics).
+- O deploy existente usa `.github/workflows/deploy.yml` e GitHub Pages. Um push para `main` publica automaticamente. Não publicar sem solicitação.
+- `public/CNAME` ainda registra `acengenhariasolar.com.br`, enquanto o último deploy informou `emgenergiasolar.com.br`. Essa divergência foi preservada nesta atualização; conferir as configurações de Pages antes de qualquer futura alteração de domínio. DNS não foi alterado.
 
 ## Estrutura principal
 
