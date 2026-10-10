@@ -841,3 +841,60 @@ body {
     padding: 24px;
   }
 }
+
+/* EMG brand */
+:root {
+  --color-navy: #232424;
+  --color-navy-deep: #141515;
+  --color-blue-soft: #343735;
+  --color-yellow: #f5bf27;
+  --color-orange: #946b06;
+  --color-gray-600: #535853;
+  --color-gray-200: #dcded8;
+}
+body { background: #f6f6f1; }
+.navbar__inner { background: rgba(20,21,21,.96); border-radius: 18px; }
+.navbar__brand strong { font-size: 2rem; font-style: italic; letter-spacing: -.07em; color: #f5bf27; }
+.navbar__brand small { font-size: .66rem; }
+.navbar__nav { gap: 16px; font-size: .84rem; }
+.navbar__brand { flex-shrink: 0; }
+.hero { min-height: 90vh; background: radial-gradient(ellipse at 85% 50%, #39311a 0%, #171819 55%); }
+.hero__content { grid-template-columns: 1fr 1fr; align-items: center; gap: 44px; padding-top: 90px; }
+.hero__copy h1 { font-size: clamp(3rem, 5.5vw, 5.4rem); line-height: 1.04; letter-spacing: -.055em; }
+.hero__copy h1 em { color: #f5bf27; font-style: normal; }
+.hero .eyebrow, .section--dark .eyebrow, .section--accent .eyebrow { color: #f5bf27; }
+.hero__brand-art { margin: 0; overflow: hidden; border: 1px solid #ffffff20; border-radius: 24px; background: #141515; box-shadow: 0 30px 80px #0005; }
+.hero__brand-art img { width: 100%; height: auto; display: block; }
+.hero__brand-art figcaption { padding: 18px 24px; color: #d5d4c9; font-size: .8rem; }
+.hero__signature { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; color: #cfcec5; font-size: .78rem; }
+.hero__signature span { width: 5px; height: 5px; border-radius: 50%; background: #f5bf27; }
+.button { border-radius: 10px; gap: 14px; cursor: pointer; }
+.section--dark { background: #202221; }
+.section--accent { background: #272c29; }
+.section--contact { background: #eeeee6; }
+.section--light { background: #fff; }
+.service-card { box-shadow: none; border-color: #ffffff20; }
+.service-card__link { display: inline-flex; gap: 14px; margin-top: 12px; color: #f5bf27; font-weight: 700; }
+.footer p { color: #bfc4bf; }
+.contact__form select { width: 100%; padding: 16px 18px; border: 1px solid var(--color-gray-200); border-radius: 14px; background: #f9fbfd; color: #232424; font: inherit; }
+section[id] { scroll-margin-top: 130px; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #b88a12; outline-offset: 5px; }
+@media (max-width: 1100px) {
+  .hero__content { grid-template-columns: 1fr; }
+  .hero__brand-art { max-width: 660px; }
+  .navbar__nav { gap: 10px; font-size: .75rem; }
+}
+@media (max-width: 860px) {
+  .navbar__nav { background: #171819; font-size: 1rem; }
+  .navbar__toggle { min-width: 44px; min-height: 44px; align-items: center; justify-content: center; }
+}
+@media (max-width: 640px) {
+  .hero__content { padding-top: 80px; gap: 28px; }
+  .hero__copy h1 { font-size: clamp(2.8rem, 12vw, 4rem); }
+  .hero__brand-art figcaption { padding: 14px; }
+  .section { padding-top: 72px; padding-bottom: 72px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

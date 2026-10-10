@@ -1,8 +1,8 @@
 export const company = {
-  name: 'AC Engenharia e Energia Solar',
-  shortName: 'AC Engenharia',
-  logo: './Logo AC Engenharia e Energia Solar.png',
-  whatsapp: '11943459000',
+  name: 'EMG Instalações Elétricas & Energia Solar',
+  shortName: 'EMG',
+  logo: './emg-logo.png',
+  whatsapp: '5511943459000',
   phone: '(11) 94345-9000',
   email: 'contato@acengenhariaenergia.com.br',
   address: 'Rua Pascoal Ranieri Mazzili, 421',
@@ -11,12 +11,10 @@ export const company = {
 
 export const navLinks = [
   { label: 'Início', href: '#home' },
-  { label: 'Sobre', href: '#sobre' },
-  { label: 'Benefícios', href: '#beneficios' },
   { label: 'Serviços', href: '#servicos' },
-  { label: 'Simulação', href: '#simulacao' },
-  { label: 'Depoimentos', href: '#depoimentos' },
-  { label: 'FAQ', href: '#faq' },
+  { label: 'Sobre', href: '#sobre' },
+  { label: 'Energia solar', href: '#simulacao' },
+  { label: 'Dúvidas', href: '#faq' },
   { label: 'Contato', href: '#contato' },
 ];
 
@@ -41,11 +39,11 @@ export const highlights = [
 export const aboutCards = [
   {
     title: 'Missão',
-    text: 'Entregar soluções solares inteligentes que reduzam custos, aumentem a autonomia energética e valorizem cada projeto.',
+    text: 'Cuidar da energia de cada cliente com instalações elétricas e soluções solares adequadas à sua necessidade.',
   },
   {
     title: 'Visão',
-    text: 'Ser referência em energia solar pela combinação entre engenharia sólida, atendimento próximo e resultados consistentes.',
+    text: 'Ser reconhecida pelo cuidado técnico, pela clareza no atendimento e pela qualidade de cada entrega.',
   },
   {
     title: 'Valores',
@@ -87,26 +85,10 @@ export const benefits = [
 ];
 
 export const services = [
-  {
-    title: 'Instalação residencial',
-    text: 'Projetos personalizados para casas e condomínios com foco em economia e estética da instalação.',
-  },
-  {
-    title: 'Instalação comercial',
-    text: 'Soluções para empresas que desejam reduzir custos operacionais e ganhar competitividade.',
-  },
-  {
-    title: 'Instalação rural',
-    text: 'Energia solar para propriedades agrícolas, bombeamento, irrigação e operação remota.',
-  },
-  {
-    title: 'Manutenção e suporte',
-    text: 'Acompanhamento técnico para manter desempenho, segurança e vida útil do sistema.',
-  },
-  {
-    title: 'Consultoria energética',
-    text: 'Análise de consumo, viabilidade e estratégia para maximizar o retorno do investimento.',
-  },
+  { title: 'Instalações elétricas', text: 'Infraestrutura elétrica para sua casa ou empresa, com planejamento de circuitos e atenção às necessidades de cada ambiente.' },
+  { title: 'Manutenção elétrica', text: 'Avaliação de falhas, reparos e manutenção preventiva para cuidar da instalação e do seu funcionamento.' },
+  { title: 'Quadros de distribuição', text: 'Montagem e adequação de quadros, organização de circuitos e avaliação dos dispositivos de proteção.' },
+  { title: 'Energia solar', text: 'Sistemas fotovoltaicos dimensionados conforme seu consumo, espaço disponível e objetivos de economia.' },
 ];
 
 export const demoVideos = [
@@ -146,6 +128,14 @@ export const testimonials = [
 ];
 
 export const faqs = [
+  {
+    question: 'A EMG também faz serviços elétricos?',
+    answer: 'Sim. Trabalhamos com instalações elétricas, manutenção e quadros de distribuição, além de sistemas de energia solar. Escolha o serviço no formulário para conversar com a equipe.',
+  },
+  {
+    question: 'Como solicitar um orçamento?',
+    answer: 'Informe o serviço, seus dados e a cidade no formulário. Ao enviar, você abre o WhatsApp com a mensagem pronta para encaminhar à equipe. A proposta depende da avaliação da necessidade e das condições do local.',
+  },
   {
     question: 'Quanto tempo dura um sistema solar?',
     answer: 'Os módulos fotovoltaicos costumam ter vida útil superior a 25 anos, mantendo alto desempenho ao longo do tempo.',

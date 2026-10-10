@@ -8,8 +8,8 @@ function Services() {
           <span className="eyebrow">Serviços</span>
           <h2>Soluções completas para diferentes perfis de consumo.</h2>
           <p>
-            Cada projeto é dimensionado conforme perfil de consumo, estrutura disponível, metas
-            de economia e viabilidade técnica. A proposta é sair do genérico e entregar precisão.
+            Da instalação elétrica à geração solar, encontre o serviço que faz sentido para
+            o seu momento. Fale com a equipe para avaliar seu projeto.
           </p>
         </div>
 
@@ -19,6 +19,7 @@ function Services() {
               <span className="service-card__index">0{index + 1}</span>
               <h3>{service.title}</h3>
               <p>{service.text}</p>
+              <a className="service-card__link" href="#contato">Solicitar avaliação <span aria-hidden="true">↗</span></a>
             </article>
           ))}
         </div>

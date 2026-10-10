@@ -8,7 +8,6 @@ import Footer from './components/Footer.jsx';
 import Hero from './components/Hero.jsx';
 import Navbar from './components/Navbar.jsx';
 import Services from './components/Services.jsx';
-import Testimonials from './components/Testimonials.jsx';
 import { company, navLinks } from './data/siteContent.js';
 import './styles/app.css';
 
@@ -22,11 +21,10 @@ function App() {
       <Navbar links={navLinks} company={company} />
       <main>
         <Hero company={company} />
+        <Services />
         <About />
         <Benefits />
-        <Services />
         <Calculator />
-        <Testimonials />
         <Faq />
         <Contact company={company} />
       </main>

@@ -9,12 +9,9 @@ function Navbar({ links, company }) {
     <header className="navbar">
       <div className="container navbar__inner">
         <a className="navbar__brand" href="#home" onClick={closeMenu}>
-          <span className="navbar__brand-mark">
-            <img src={company.logo} alt={company.name} />
-          </span>
           <span>
             <strong>{company.shortName}</strong>
-            <small>Engenharia e Energia Solar</small>
+            <small>Instalações Elétricas & Energia Solar</small>
           </span>
         </a>
 

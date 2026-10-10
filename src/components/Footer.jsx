@@ -4,7 +4,7 @@ function Footer({ links, company }) {
       <div className="container footer__inner">
         <div className="footer__brand">
           <strong>{company.name}</strong>
-          <p>Energia solar com engenharia, confiança e visão de longo prazo.</p>
+          <p>Instalações elétricas & energia solar. Mais energia para o seu futuro.</p>
         </div>
 
         <div className="footer__links">
@@ -20,7 +20,6 @@ function Footer({ links, company }) {
             WhatsApp
           </a>
           <a href={`mailto:${company.email}`}>Email</a>
-          <a href="#home">Instagram</a>
         </div>
       </div>
       <div className="footer__bar">

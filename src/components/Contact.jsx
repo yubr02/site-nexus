@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 function Contact({ company }) {
   const [formState, setFormState] = useState({
+    servico: 'Instalações elétricas',
     nome: '',
     telefone: '',
     email: '',
@@ -18,8 +19,9 @@ function Contact({ company }) {
 
     const message = encodeURIComponent(
       [
-        'Olá, quero solicitar uma proposta de energia solar.',
+        'Olá, quero solicitar um orçamento com a EMG.',
         '',
+        `Serviço: ${formState.servico}`,
         `Nome: ${formState.nome || '-'}`,
         `Telefone: ${formState.telefone || '-'}`,
         `Email: ${formState.email || '-'}`,
@@ -30,7 +32,7 @@ function Contact({ company }) {
       ].join('\n'),
     );
 
-    window.open(`https://wa.me/${company.whatsapp}?text=${message}`, '_blank');
+    window.open(`https://wa.me/${company.whatsapp}?text=${message}`, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -38,10 +40,10 @@ function Contact({ company }) {
       <div className="container contact">
         <div className="contact__info reveal">
           <span className="eyebrow">Contato</span>
-          <h2>Solicite uma proposta e entenda o potencial do seu projeto.</h2>
+          <h2>Vamos conversar sobre o seu projeto?</h2>
           <p>
             Fale com a nossa equipe para receber uma análise inicial, tirar dúvidas e iniciar
-            um orçamento com visão técnica e foco em retorno.
+            um orçamento para instalações elétricas, manutenção ou energia solar.
           </p>
 
           <div className="contact__details">
@@ -70,15 +72,28 @@ function Contact({ company }) {
         </div>
 
         <form className="contact__form reveal reveal-delay" onSubmit={handleSubmit}>
+          <label>
+            Qual serviço você precisa?
+            <select name="servico" value={formState.servico} onChange={handleChange}>
+              <option>Instalações elétricas</option>
+              <option>Manutenção elétrica</option>
+              <option>Quadros de distribuição</option>
+              <option>Energia solar</option>
+              <option>Preciso de orientação</option>
+            </select>
+          </label>
           <div className="form-grid">
             <label>
               Nome
-              <input name="nome" value={formState.nome} onChange={handleChange} placeholder="Seu nome" />
+              <input required autoComplete="name" name="nome" value={formState.nome} onChange={handleChange} placeholder="Seu nome" />
             </label>
             <label>
               Telefone
               <input
                 name="telefone"
+                type="tel"
+                required
+                autoComplete="tel"
                 value={formState.telefone}
                 onChange={handleChange}
                 placeholder="(11) 99999-9999"
@@ -106,7 +121,7 @@ function Contact({ company }) {
               value={formState.mensagem}
               onChange={handleChange}
               rows="5"
-              placeholder="Conte um pouco sobre seu consumo ou tipo de projeto."
+              placeholder="Conte o que você precisa e onde será o serviço."
             />
           </label>
           <button className="button button--primary" type="submit">

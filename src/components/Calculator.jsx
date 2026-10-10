@@ -32,7 +32,7 @@ function Calculator() {
           <h2>Descubra quanto sua conta pode encolher com um projeto bem dimensionado.</h2>
           <p>
             Informe seu valor médio mensal para visualizar uma estimativa simples de economia.
-            É uma referência inicial para iniciar a conversa comercial com mais contexto.
+            A simulação usa uma hipótese fixa de 80% de economia, não uma garantia. O resultado real depende da tarifa, do consumo e da avaliação do projeto.
           </p>
 
           <label className="calculator__label" htmlFor="billValue">

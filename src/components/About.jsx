@@ -8,10 +8,9 @@ function About() {
           <span className="eyebrow">Sobre a empresa</span>
           <h2>Uma empresa com postura técnica e atendimento consultivo.</h2>
           <p>
-            A AC Engenharia e Energia Solar une visão de engenharia, tecnologia fotovoltaica e
-            atendimento próximo para entregar projetos seguros, escaláveis e financeiramente
-            inteligentes. Atuamos com planejamento detalhado, escolha criteriosa de equipamentos
-            e foco em credibilidade em cada etapa.
+            A EMG reúne instalações elétricas, manutenção, quadros de distribuição e energia
+            solar em um só lugar. Nosso atendimento começa entendendo o que você precisa,
+            para orientar o serviço e apresentar uma proposta clara para sua casa ou empresa.
           </p>
         </div>
 
